@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\Leo\\Documents\\EIS\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Leo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+    "C:\\Users\\Diego\\Desktop\\proyecto\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Diego\\Desktop\\proyecto\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Diego\\Desktop\\proyecto\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj",
+        "projectName": "unq-iisoft-2021-c1-hospitalWebSite",
+        "projectPath": "C:\\Users\\Diego\\Desktop\\proyecto\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj",
+        "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Diego\\Desktop\\proyecto\\unq-iisoft-2021-c1-hospitalWebSite\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> a7e972bb4da9157680daa4ace33790af4934e79e
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -83,7 +100,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
