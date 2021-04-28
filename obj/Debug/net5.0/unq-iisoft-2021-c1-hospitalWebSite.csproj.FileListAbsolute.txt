@@ -516,3 +516,4 @@ C:\Users\Leo\Documents\EIS\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\u
 C:\Users\Leo\Documents\EIS\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\ref\unq-iisoft-2021-c1-hospitalWebSite.dll
 C:\Users\Leo\Documents\EIS\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\unq-iisoft-2021-c1-hospitalWebSite.pdb
 C:\Users\Leo\Documents\EIS\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\unq-iisoft-2021-c1-hospitalWebSite.genruntimeconfig.cache
+C:\Users\Leo\Documents\EIS\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\LogueoResult.cshtml.g.cs
