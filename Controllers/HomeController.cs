@@ -46,6 +46,10 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
+        public IActionResult Logueo()
+        {
+            return View();
+        }
        
         [HttpPost] 
          public IActionResult RegistrarUsuario(string mail, string nombre, string apellido, string obraSocial, string contraseña)   {
