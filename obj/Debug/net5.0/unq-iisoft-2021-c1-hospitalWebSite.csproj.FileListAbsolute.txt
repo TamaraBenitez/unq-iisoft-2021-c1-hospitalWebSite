@@ -168,3 +168,5 @@ C:\Users\usuario\Desktop\Ingeniera de Software-UNQ\unq-iisoft-2021-c1-hospitalWe
 C:\Users\usuario\Desktop\Ingeniera de Software-UNQ\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\ref\unq-iisoft-2021-c1-hospitalWebSite.dll
 C:\Users\usuario\Desktop\Ingeniera de Software-UNQ\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\unq-iisoft-2021-c1-hospitalWebSite.pdb
 C:\Users\usuario\Desktop\Ingeniera de Software-UNQ\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\unq-iisoft-2021-c1-hospitalWebSite.genruntimeconfig.cache
+C:\Users\usuario\Desktop\Ingeniera de Software-UNQ\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\Registro.cshtml.g.cs
+C:\Users\usuario\Desktop\Ingeniera de Software-UNQ\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\RegistroResult.cshtml.g.cs

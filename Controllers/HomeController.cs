@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Models.Hospital;
 using unq_iisoft_2021_c1_hospitalWebSite.Models;
 
 namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
@@ -12,10 +13,12 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly SanatorioContext db;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger,SanatorioContext contexto)
         {
             _logger = logger;
+              this.db = contexto;
         }
 
         public IActionResult Index()
@@ -28,10 +31,47 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
             return View();
         }
 
+    public IActionResult Registro() {
+
+        return View();
+    }
+
+    public IActionResult RegistroResult(){
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+       
+        [HttpPost] 
+         public IActionResult RegistrarUsuario(string mail, string nombre, string apellido, string obraSocial, string contraseña)   {
+
+             Usuario user = db.Usuario.FirstOrDefault(u => u.Mail == mail);
+              if(user != null){
+                ViewBag.MailRegistrado = true;
+                return View("RegistroResult");
+            }
+
+             Usuario nuevoUsuario = new Usuario{
+                Mail = mail,
+                Nombre = nombre,
+                Apellido = apellido,
+                ObraSocial = obraSocial,
+                Contraseña = contraseña
+            };
+            
+            db.Usuario.Add(nuevoUsuario);
+            db.SaveChanges();
+            return View("RegistroResult");
+
+        }
+
     }
+
+
+    
 }

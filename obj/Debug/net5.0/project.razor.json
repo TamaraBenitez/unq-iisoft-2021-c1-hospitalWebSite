@@ -15624,8 +15624,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\Ingeniera de Software-UNQ\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Register\\Registro.cshtml",
+      "TargetPath": "Views\\Register\\Registro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\usuario\\Desktop\\Ingeniera de Software-UNQ\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\Ingeniera de Software-UNQ\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Registro.cshtml",
+      "TargetPath": "Views\\Home\\Registro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\Ingeniera de Software-UNQ\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\RegistroResult.cshtml",
+      "TargetPath": "Views\\Home\\RegistroResult.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15651,6 +15666,11 @@
     {
       "FilePath": "c:\\Users\\usuario\\Desktop\\Ingeniera de Software-UNQ\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\Ingeniera de Software-UNQ\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Register\\RegistroResult.cshtml",
+      "TargetPath": "Views\\Register\\RegistroResult.cshtml",
       "FileKind": "mvc"
     }
   ],
