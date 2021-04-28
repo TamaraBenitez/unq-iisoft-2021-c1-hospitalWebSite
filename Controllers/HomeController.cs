@@ -51,6 +51,36 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
             return View();
         }
        
+          [HttpPost]
+        public IActionResult Login(string mail, string contraseña){
+            Usuario usuarioLogin = db.Usuario.FirstOrDefault(usuario => usuario.Mail == mail);
+            if(usuarioLogin != null){
+                if(usuarioLogin.Contraseña == contraseña){
+                     
+                    AgregarUsuarioASession(usuarioLogin);
+                    return View("LogueoResult");
+                }else{
+                    ViewBag.ErrorEnLogin = true;
+                    return View("Logueo");
+                }
+            }else{
+                ViewBag.ErrorEnLogin = true;
+                return View("Logueo");
+            }
+        }
+
+          public IActionResult LogueoResult(){
+            return View();
+        }
+
+
+         private JsonResult AgregarUsuarioASession(Usuario usuarioLogin) {
+           HttpContext.Session.Set<Usuario>("UsuarioLogueado", usuarioLogin);
+            return Json(usuarioLogin);
+        }
+
+
+
         [HttpPost] 
          public IActionResult RegistrarUsuario(string mail, string nombre, string apellido, string obraSocial, string contraseña)   {
 
