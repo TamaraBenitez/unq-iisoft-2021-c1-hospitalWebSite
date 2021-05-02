@@ -104,8 +104,13 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
 
         }
 
-    }
+        public IActionResult Salir(){
+            HttpContext.Session.Remove("UsuarioLogueado");
+            return RedirectToAction("Logueo", "Home") ;
+        }
 
+    }
+        
 
     
 }
