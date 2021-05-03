@@ -866,3 +866,6 @@ C:\Users\Diego\Desktop\proyecto\ultimo\unq-iisoft-2021-c1-hospitalWebSite\obj\De
 C:\Users\Diego\Desktop\proyecto\ultimo\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\unq-iisoft-2021-c1-hospitalWebSite.pdb
 C:\Users\Diego\Desktop\proyecto\ultimo\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\unq-iisoft-2021-c1-hospitalWebSite.genruntimeconfig.cache
 C:\Users\Diego\Desktop\proyecto\ultimo\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Shared\_LayoutUser.cshtml.g.cs
+C:\Users\chaco\OneDrive\Documents\Ingenieria de Software\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\LogueoResult.cshtml.g.cs
+C:\Users\chaco\OneDrive\Documents\Ingenieria de Software\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Shared\_LayoutUser.cshtml.g.cs
+C:\Users\chaco\OneDrive\Documents\Ingenieria de Software\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\MiPerfil.cshtml.g.cs

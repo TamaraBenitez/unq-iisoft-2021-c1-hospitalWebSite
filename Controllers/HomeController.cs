@@ -69,6 +69,21 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
             }
         }
 
+        public IActionResult MiPerfil(){
+            Usuario usuarioLogeado = HttpContext.Session.Get<Usuario>("UsuarioLogueado");
+            Usuario user = db.Usuario.FirstOrDefault(u => u.Mail == usuarioLogeado.Mail);
+            ViewBag.Nombre = user.Nombre;
+            ViewBag.Apellido = user.Apellido;
+            ViewBag.Mail = user.Mail;
+            ViewBag.ObraSocial = user.ObraSocial;
+            ViewBag.Contraseña = user.Contraseña;
+            return View();
+        }
+        
+        public IActionResult IrAPerfil(){
+            return RedirectToAction("MiPerfil","Home") ;
+        }
+
           public IActionResult LogueoResult(){
             return View();
         }
