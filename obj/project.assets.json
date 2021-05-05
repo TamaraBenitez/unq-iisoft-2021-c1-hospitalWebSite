@@ -7565,19 +7565,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\chaco\\.nuget\\packages\\": {}
+    "C:\\Users\\Leo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chaco\\OneDrive\\Documents\\Ingenieria de Software\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj",
+      "projectUniqueName": "C:\\Users\\Leo\\Documents\\EIS\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj",
       "projectName": "unq-iisoft-2021-c1-hospitalWebSite",
-      "projectPath": "C:\\Users\\chaco\\OneDrive\\Documents\\Ingenieria de Software\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj",
-      "packagesPath": "C:\\Users\\chaco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chaco\\OneDrive\\Documents\\Ingenieria de Software\\unq-iisoft-2021-c1-hospitalWebSite\\obj\\",
+      "projectPath": "C:\\Users\\Leo\\Documents\\EIS\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj",
+      "packagesPath": "C:\\Users\\Leo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Leo\\Documents\\EIS\\unq-iisoft-2021-c1-hospitalWebSite\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\chaco\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Leo\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
