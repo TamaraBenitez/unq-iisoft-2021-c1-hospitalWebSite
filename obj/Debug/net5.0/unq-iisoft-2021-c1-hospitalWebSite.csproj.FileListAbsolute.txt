@@ -874,3 +874,7 @@ C:\Users\Leo\Documents\EIS\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\R
 C:\Users\Leo\Documents\EIS\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\Staff.cshtml.g.cs
 C:\Users\Leo\Documents\EIS\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\Autoridades.cshtml.g.cs
 C:\Users\Leo\Documents\EIS\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\Historia.cshtml.g.cs
+C:\Users\Diego\Desktop\proyecto\ultimo\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\Autoridades.cshtml.g.cs
+C:\Users\Diego\Desktop\proyecto\ultimo\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\Historia.cshtml.g.cs
+C:\Users\Diego\Desktop\proyecto\ultimo\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\MiPerfil.cshtml.g.cs
+C:\Users\Diego\Desktop\proyecto\ultimo\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\Staff.cshtml.g.cs
