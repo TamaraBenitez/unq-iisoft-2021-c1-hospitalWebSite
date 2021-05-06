@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Diego\\Desktop\\proyecto\\ultimo\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj": {}
+    "C:\\Users\\Diego\\Desktop\\proyecto\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Diego\\Desktop\\proyecto\\ultimo\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj": {
+    "C:\\Users\\Diego\\Desktop\\proyecto\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Diego\\Desktop\\proyecto\\ultimo\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj",
+        "projectUniqueName": "C:\\Users\\Diego\\Desktop\\proyecto\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj",
         "projectName": "unq-iisoft-2021-c1-hospitalWebSite",
-        "projectPath": "C:\\Users\\Diego\\Desktop\\proyecto\\ultimo\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj",
+        "projectPath": "C:\\Users\\Diego\\Desktop\\proyecto\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj",
         "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Diego\\Desktop\\proyecto\\ultimo\\unq-iisoft-2021-c1-hospitalWebSite\\obj\\",
+        "outputPath": "C:\\Users\\Diego\\Desktop\\proyecto\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config"

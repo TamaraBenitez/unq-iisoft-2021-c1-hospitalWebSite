@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mYxASkgJEOOeywhMNYAvbozt16Ldl4vEGLb/NgyXBofSK7CV4hb+AhBtyoD3No/YD7FBuQS+YTwAlU4IeW7KuA==",
+  "dgSpecHash": "0R3S8X8zIX1CryzSBSNH75DZN2lFpnBMfjZKq4orKGl6uNQFG4XO5Z0Nt1itG+9v2xOUjbRBXdqG8NT/d5JzKw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Diego\\Desktop\\proyecto\\ultimo\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj",
+  "projectFilePath": "C:\\Users\\Diego\\Desktop\\proyecto\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Diego\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
