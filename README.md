@@ -17,3 +17,4 @@
 * [Backlog General](https://trello.com/b/hHBIqahj/hospital-website)
 * [Documento de Reporte](https://docs.google.com/document/d/159AkBiuCIgt39jOMfEcqOxkFnQF73_9XxSiGtmhUqW8/edit?usp=sharing)
 * [Repositorio](https://github.com/TamaraBenitez/unq-iisoft-2021-c1-hospitalWebSite)
+* [Sprint2](https://github.com/TamaraBenitez/unq-iisoft-2021-c1-hospitalWebSite/releases/tag/2.0)
