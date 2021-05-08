@@ -136,8 +136,16 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
             return RedirectToAction("Logueo", "Home") ;
         }
 
-    }
-        
 
-    
+public IActionResult EliminarCuenta(){
+            Usuario user = HttpContext.Session.Get<Usuario>("UsuarioLogueado");
+            HttpContext.Session.Remove("UsuarioLogueado");
+            Usuario usuario = db.Usuario.FirstOrDefault(u => u.Mail == user.Mail);
+            db.Usuario.Remove(usuario);
+            db.SaveChanges();
+
+            return RedirectToAction("Index", "Home");
+        }
+
+    }
 }
