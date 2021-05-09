@@ -31,6 +31,10 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
             return View();
         }
 
+    public IActionResult Prestaciones() {
+
+        return View();
+    }
     public IActionResult Registro() {
 
         return View();
