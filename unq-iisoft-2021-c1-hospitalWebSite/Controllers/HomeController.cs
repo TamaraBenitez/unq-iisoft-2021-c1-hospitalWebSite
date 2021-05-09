@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Models.Hospital;
 using unq_iisoft_2021_c1_hospitalWebSite.Models;
+using System.Net.Mail;
 
 namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
 {
@@ -73,6 +74,12 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
             return View();
         }
        
+
+        public IActionResult ConsultaEnviada() {
+
+            return View();
+        }
+
           [HttpPost]
         public IActionResult Login(string mail, string contraseña){
             Usuario usuarioLogin = db.Usuario.FirstOrDefault(usuario => usuario.Mail == mail);
@@ -116,7 +123,40 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
             return Json(usuarioLogin);
         }
 
+    [HttpPost]
+    public IActionResult EnviarContacto (string nombre, string mail, string consulta) {
 
+
+        try {
+
+           MailMessage correo = new MailMessage();
+           correo.From = new MailAddress("fundacionfavaloro6@gmail.com");
+           correo.To.Add(mail);
+           correo.Body= consulta;
+            correo.IsBodyHtml= true;
+            correo.Priority= MailPriority.Normal;
+            SmtpClient smtp = new SmtpClient();
+            smtp.Host= "smtp.gmail.com";
+            smtp.Port=25;
+            smtp.EnableSsl=true;
+            smtp.UseDefaultCredentials=false;
+            string scuentaCorreo="fundacionfavaloro6@gmail.com";
+            string sPasswordCorreo="Fundacion123";
+             smtp.Credentials= new System.Net.NetworkCredential(scuentaCorreo,sPasswordCorreo);
+             smtp.Send(correo);
+             ViewBag.Mensaje= "Mensaje enviado correctamente";
+        }
+        catch (Exception ex) {
+
+            ViewBag.Error=ex.Message;
+        }
+
+             this.ViewBag.Nombre = nombre;
+            this.ViewBag.Mail = mail;
+            this.ViewBag.Consulta = consulta;
+          return View("ConsultaEnviada");
+
+    }
 
         [HttpPost] 
          public IActionResult RegistrarUsuario(string mail, string nombre, string apellido, string obraSocial, string contraseña)   {
