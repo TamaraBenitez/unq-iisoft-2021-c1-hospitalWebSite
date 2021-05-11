@@ -37,10 +37,7 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
 
         return View();
     }
-    public IActionResult Registro() {
-
-        return View();
-    }
+   
     public IActionResult Staff() {
 
         return View();
@@ -104,7 +101,7 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
             }
         }
 
-        public IActionResult MiPerfil(){
+       public IActionResult MiPerfil(){
             Usuario usuarioLogeado = HttpContext.Session.Get<Usuario>("UsuarioLogueado");
             Usuario user = db.Usuario.FirstOrDefault(u => u.Mail == usuarioLogeado.Mail);
             ViewBag.Nombre = user.Nombre;
@@ -112,12 +109,11 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
             ViewBag.Mail = user.Mail;
             ViewBag.ObraSocial = user.ObraSocial;
             ViewBag.Contraseña = user.Contraseña;
+            ViewBag.ObrasSociales = db.ObraSocial.ToList();
             return View();
         }
         
-        public IActionResult IrAPerfil(){
-            return RedirectToAction("MiPerfil","Home") ;
-        }
+       
 
           public IActionResult LogueoResult(){
             return View();
@@ -203,5 +199,9 @@ public IActionResult EliminarCuenta(){
             return RedirectToAction("Index", "Home");
         }
 
+     public IActionResult Registro(){
+            ViewBag.ObrasSociales = db.ObraSocial.Where(os => os.Estado == "Activa").OrderBy(os => os.Nombre).ToList();
+            return View();
+        }
     }
 }
