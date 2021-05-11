@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using Models.Hospital;
 using unq_iisoft_2021_c1_hospitalWebSite.Models;
 using System.Net.Mail;
+using Microsoft.EntityFrameworkCore;
 
 namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
 {
@@ -54,6 +55,11 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
     }
 
 
+     public IActionResult Coberturas() {
+             ViewBag.ObrasSociales = db.ObraSocial.Include(o => o.Planes).Where(os => os.Estado == "Activa").OrderBy(o => o.Nombre).ToList();
+            return View();
+        }
+
     public IActionResult Contacto() {
 
         return View();
@@ -74,7 +80,7 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
             return View();
         }
        
-
+    
         public IActionResult ConsultaEnviada() {
 
             return View();

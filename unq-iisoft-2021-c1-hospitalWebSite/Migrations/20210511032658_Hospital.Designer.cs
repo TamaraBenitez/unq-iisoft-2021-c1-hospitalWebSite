@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Models.Hospital;
 
 namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
 {
     [DbContext(typeof(SanatorioContext))]
-    partial class SanatorioContextModelSnapshot : ModelSnapshot
+    [Migration("20210511032658_Hospital")]
+    partial class Hospital
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
