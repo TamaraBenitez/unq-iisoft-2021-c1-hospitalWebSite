@@ -43,10 +43,11 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
         return View();
     }
    
-    public IActionResult Staff() {
-
-        return View();
-    }
+   public IActionResult Staff() {
+            ViewBag.Especialidades = db.Especialidad.OrderBy(e => e.Nombre).ToList();
+            ViewBag.Medicos = db.Medico.Include(m => m.Especialidad).Include(m => m.RolEnEspecialidad).ToList();
+            return View();
+        }
      public IActionResult Historia() {
 
         return View();

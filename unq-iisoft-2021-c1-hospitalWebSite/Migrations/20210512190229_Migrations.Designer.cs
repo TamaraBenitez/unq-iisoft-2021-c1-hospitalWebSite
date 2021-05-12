@@ -9,7 +9,7 @@ using Models.Hospital;
 namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
 {
     [DbContext(typeof(SanatorioContext))]
-    [Migration("20210512163902_Migrations")]
+    [Migration("20210512190229_Migrations")]
     partial class Migrations
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -17,6 +17,46 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "5.0.6");
+
+            modelBuilder.Entity("Models.Hospital.Especialidad", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Especialidad");
+                });
+
+            modelBuilder.Entity("Models.Hospital.Medico", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("EspecialidadID")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("NombreYApellido")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("RolEnEspecialidadID")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("EspecialidadID");
+
+                    b.HasIndex("RolEnEspecialidadID");
+
+                    b.ToTable("Medico");
+                });
 
             modelBuilder.Entity("Models.Hospital.Nota", b =>
                 {
@@ -94,6 +134,21 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
                     b.ToTable("Plan");
                 });
 
+            modelBuilder.Entity("Models.Hospital.Rol", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Rol");
+                });
+
             modelBuilder.Entity("Models.Hospital.Usuario", b =>
                 {
                     b.Property<string>("Mail")
@@ -117,6 +172,21 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
                     b.HasKey("Mail");
 
                     b.ToTable("Usuario");
+                });
+
+            modelBuilder.Entity("Models.Hospital.Medico", b =>
+                {
+                    b.HasOne("Models.Hospital.Especialidad", "Especialidad")
+                        .WithMany()
+                        .HasForeignKey("EspecialidadID");
+
+                    b.HasOne("Models.Hospital.Rol", "RolEnEspecialidad")
+                        .WithMany()
+                        .HasForeignKey("RolEnEspecialidadID");
+
+                    b.Navigation("Especialidad");
+
+                    b.Navigation("RolEnEspecialidad");
                 });
 
             modelBuilder.Entity("Models.Hospital.Plan", b =>

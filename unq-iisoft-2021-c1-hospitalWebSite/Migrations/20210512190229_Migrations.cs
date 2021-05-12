@@ -7,6 +7,19 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "Especialidad",
+                columns: table => new
+                {
+                    ID = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Nombre = table.Column<string>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Especialidad", x => x.ID);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Nota",
                 columns: table => new
                 {
@@ -36,6 +49,19 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_ObraSocial", x => x.ID);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Rol",
+                columns: table => new
+                {
+                    ID = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Nombre = table.Column<string>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Rol", x => x.ID);
                 });
 
             migrationBuilder.CreateTable(
@@ -74,6 +100,43 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
                         onDelete: ReferentialAction.Restrict);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Medico",
+                columns: table => new
+                {
+                    ID = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    NombreYApellido = table.Column<string>(type: "TEXT", nullable: false),
+                    EspecialidadID = table.Column<int>(type: "INTEGER", nullable: true),
+                    RolEnEspecialidadID = table.Column<int>(type: "INTEGER", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Medico", x => x.ID);
+                    table.ForeignKey(
+                        name: "FK_Medico_Especialidad_EspecialidadID",
+                        column: x => x.EspecialidadID,
+                        principalTable: "Especialidad",
+                        principalColumn: "ID",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Medico_Rol_RolEnEspecialidadID",
+                        column: x => x.RolEnEspecialidadID,
+                        principalTable: "Rol",
+                        principalColumn: "ID",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Medico_EspecialidadID",
+                table: "Medico",
+                column: "EspecialidadID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Medico_RolEnEspecialidadID",
+                table: "Medico",
+                column: "RolEnEspecialidadID");
+
             migrationBuilder.CreateIndex(
                 name: "IX_Plan_ObraSocialID",
                 table: "Plan",
@@ -83,6 +146,9 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "Medico");
+
+            migrationBuilder.DropTable(
                 name: "Nota");
 
             migrationBuilder.DropTable(
@@ -90,6 +156,12 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
 
             migrationBuilder.DropTable(
                 name: "Usuario");
+
+            migrationBuilder.DropTable(
+                name: "Especialidad");
+
+            migrationBuilder.DropTable(
+                name: "Rol");
 
             migrationBuilder.DropTable(
                 name: "ObraSocial");

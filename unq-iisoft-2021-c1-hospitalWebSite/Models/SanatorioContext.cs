@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 
+using System.Collections.Generic;
+
 namespace Models.Hospital { 
 
 
@@ -13,11 +15,11 @@ namespace Models.Hospital {
         {
         }
 
-
+        public DbSet<Medico> Medico  {get; set; }
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<ObraSocial> ObraSocial { get; set; }
         public DbSet<Plan> Plan { get; set; }
         public DbSet<Nota> Nota { get; set; }
-
+        public DbSet<Especialidad> Especialidad { get; set; }
     }
 }
