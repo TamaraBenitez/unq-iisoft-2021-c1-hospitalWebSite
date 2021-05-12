@@ -139,8 +139,9 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
 
            MailMessage correo = new MailMessage();
            correo.From = new MailAddress("fundacionfavaloro6@gmail.com");
-           correo.To.Add(mail);
+           correo.To.Add("fundacionfavaloro6@gmail.com");
            correo.Body= consulta;
+           correo.CC.Add(mail);
             correo.IsBodyHtml= true;
             correo.Priority= MailPriority.Normal;
             SmtpClient smtp = new SmtpClient();
