@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Diego\\Desktop\\unq-iisoft-2021-c1-hospitalWebSite\\test\\test.csproj": {}
+    "C:\\Users\\Diego\\Desktop\\unq-iisoft-2021-c1-hospitalWebSite\\Test\\test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Diego\\Desktop\\unq-iisoft-2021-c1-hospitalWebSite\\test\\test.csproj": {
+    "C:\\Users\\Diego\\Desktop\\unq-iisoft-2021-c1-hospitalWebSite\\Test\\test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Diego\\Desktop\\unq-iisoft-2021-c1-hospitalWebSite\\test\\test.csproj",
+        "projectUniqueName": "C:\\Users\\Diego\\Desktop\\unq-iisoft-2021-c1-hospitalWebSite\\Test\\test.csproj",
         "projectName": "test",
-        "projectPath": "C:\\Users\\Diego\\Desktop\\unq-iisoft-2021-c1-hospitalWebSite\\test\\test.csproj",
+        "projectPath": "C:\\Users\\Diego\\Desktop\\unq-iisoft-2021-c1-hospitalWebSite\\Test\\test.csproj",
         "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Diego\\Desktop\\unq-iisoft-2021-c1-hospitalWebSite\\test\\obj\\",
+        "outputPath": "C:\\Users\\Diego\\Desktop\\unq-iisoft-2021-c1-hospitalWebSite\\Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -48,7 +48,7 @@
             },
             "MSTest.TestFramework": {
               "target": "Package",
-              "version": "[2.1.1, )"
+              "version": "[2.1.2, )"
             },
             "Microsoft.AspNetCore.TestHost": {
               "target": "Package",
@@ -73,6 +73,10 @@
             "SpecFlow": {
               "target": "Package",
               "version": "[3.8.7, )"
+            },
+            "SpecFlow.MsTest": {
+              "target": "Package",
+              "version": "[*, )"
             },
             "coverlet.collector": {
               "target": "Package",
@@ -140,15 +144,15 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.5, )"
+              "version": "[5.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.SQLite": {
               "target": "Package",
-              "version": "[5.0.5, )"
+              "version": "[5.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.5, )"
+              "version": "[5.0.6, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
