@@ -1,8 +1,12 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Http
+
+@{
     ViewData["Title"] = "Home Page";
+    string user = this.Context.Session.GetString("UsuarioLogueado");
+}
 
-
-
+@if (string.IsNullOrEmpty(user))
+{
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -33,4 +37,28 @@
         </a>
     </div>
 
+}
+else
+{
+    <div class="container">
+        <div class="d-flex p-2 bd-highlight title-page">Bienvenido @ViewBag.NombreUsuario</div>
+
+        <div>
+            <div class="card-group">
+                @foreach (var nota in ViewBag.Notas)
+                {
+
+                    <div class="card">
+                        <img src=@nota.URLImagen class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">@nota.Titulo</h5>
+                            <p class="card-text">@nota.Cuerpo</p>
+                            <a class="btn btn-dark" href=@nota.URLNotaCompleta target="_blank" role="button">Ver Más</a>
+                            <p class="card-text"><small class="text-muted">@nota.Fecha</small></p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
 }

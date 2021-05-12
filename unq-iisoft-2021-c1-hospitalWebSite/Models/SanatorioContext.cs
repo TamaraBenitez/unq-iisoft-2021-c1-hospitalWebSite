@@ -14,9 +14,10 @@ namespace Models.Hospital {
         }
 
 
-          public DbSet<Usuario> Usuario { get; set; }
-          public DbSet<ObraSocial> ObraSocial { get; set; }
-         public DbSet<Plan> Plan { get; set; }
+        public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<ObraSocial> ObraSocial { get; set; }
+        public DbSet<Plan> Plan { get; set; }
+        public DbSet<Nota> Nota { get; set; }
 
     }
 }

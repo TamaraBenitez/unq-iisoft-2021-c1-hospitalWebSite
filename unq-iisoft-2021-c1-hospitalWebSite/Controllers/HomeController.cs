@@ -25,6 +25,11 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
 
         public IActionResult Index()
         {
+            Usuario usuarioLogueado = HttpContext.Session.Get<Usuario>("UsuarioLogueado");
+            if(usuarioLogueado != null){
+                ViewBag.NombreUsuario = usuarioLogueado.Nombre;
+            }
+            ViewBag.Notas = db.Nota.ToList();
             return View();
         }
 

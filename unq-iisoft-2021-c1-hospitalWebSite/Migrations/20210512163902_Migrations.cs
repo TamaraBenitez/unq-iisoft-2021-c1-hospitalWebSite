@@ -2,10 +2,27 @@
 
 namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
 {
-    public partial class Hospital : Migration
+    public partial class Migrations : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Nota",
+                columns: table => new
+                {
+                    ID = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Titulo = table.Column<string>(type: "TEXT", nullable: false),
+                    Cuerpo = table.Column<string>(type: "TEXT", nullable: false),
+                    Fecha = table.Column<string>(type: "TEXT", nullable: false),
+                    URLImagen = table.Column<string>(type: "TEXT", nullable: false),
+                    URLNotaCompleta = table.Column<string>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Nota", x => x.ID);
+                });
+
             migrationBuilder.CreateTable(
                 name: "ObraSocial",
                 columns: table => new
@@ -65,6 +82,9 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Nota");
+
             migrationBuilder.DropTable(
                 name: "Plan");
 

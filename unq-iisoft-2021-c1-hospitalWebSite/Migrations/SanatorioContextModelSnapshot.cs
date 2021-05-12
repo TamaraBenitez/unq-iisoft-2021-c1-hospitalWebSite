@@ -14,7 +14,38 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "5.0.5");
+                .HasAnnotation("ProductVersion", "5.0.6");
+
+            modelBuilder.Entity("Models.Hospital.Nota", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Cuerpo")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Fecha")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Titulo")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("URLImagen")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("URLNotaCompleta")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Nota");
+                });
 
             modelBuilder.Entity("Models.Hospital.ObraSocial", b =>
                 {

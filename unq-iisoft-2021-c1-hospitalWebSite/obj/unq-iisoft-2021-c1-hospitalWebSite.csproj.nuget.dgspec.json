@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Diego\\Desktop\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj": {}
+    "C:\\Users\\MarianoX\\Documents\\Isoft\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Diego\\Desktop\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj": {
+    "C:\\Users\\MarianoX\\Documents\\Isoft\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Diego\\Desktop\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj",
+        "projectUniqueName": "C:\\Users\\MarianoX\\Documents\\Isoft\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj",
         "projectName": "unq-iisoft-2021-c1-hospitalWebSite",
-        "projectPath": "C:\\Users\\Diego\\Desktop\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj",
-        "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Diego\\Desktop\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\obj\\",
+        "projectPath": "C:\\Users\\MarianoX\\Documents\\Isoft\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj",
+        "packagesPath": "C:\\Users\\MarianoX\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MarianoX\\Documents\\Isoft\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\MarianoX\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -46,15 +46,15 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.5, )"
+              "version": "[5.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.SQLite": {
               "target": "Package",
-              "version": "[5.0.5, )"
+              "version": "[5.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.5, )"
+              "version": "[5.0.6, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
@@ -83,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
