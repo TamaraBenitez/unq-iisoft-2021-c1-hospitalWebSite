@@ -2,7 +2,7 @@
 
 namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
 {
-    public partial class Migrations : Migration
+    public partial class MTurnos : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

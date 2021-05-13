@@ -9,8 +9,8 @@ using Models.Hospital;
 namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
 {
     [DbContext(typeof(SanatorioContext))]
-    [Migration("20210512190229_Migrations")]
-    partial class Migrations
+    [Migration("20210513224249_MTurnos")]
+    partial class MTurnos
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -1,0 +1,27 @@
+<div class="">
+    <div class="row">
+        <div class="col-sm">
+            <h4 class="title-page">Solicitá tu turno</h4>
+            <form method="POST" action='@Url.Action("TurnoEnviado", "Home")'>
+                <div class="form-group" id="contact-form-style">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" value=@ViewBag.Nombre class="form-control form-control-lg" name="nombre">
+                </div>
+
+              
+                <div class="form-group">
+        <label for="obraSocial" style="width:50%;">Especialidad</label>
+        <select class="form-control" style="width:50%;" name="obraSocial">
+         @foreach (var os in ViewBag.Especialidades){
+             <option >@os.Nombre</option>
+         }
+         <option>Privado</option>
+      
+    </select>
+  </div>
+
+                <button type="submit" class="btn btn-dark">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>

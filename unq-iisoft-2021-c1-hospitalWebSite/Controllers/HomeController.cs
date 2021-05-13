@@ -80,7 +80,13 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
 
         public IActionResult Logueo()
         {
+            Usuario user = HttpContext.Session.Get<Usuario>("UsuarioLogueado");
+                if(user==null){
             return View();
+            }
+            else {
+                return View("LogueoResult");
+            }
         }
        
     
@@ -223,6 +229,18 @@ public IActionResult EliminarCuenta(){
             db.Usuario.Update(usuario);
             db.SaveChanges();
             return View("Transaccion");
+        }
+    
+    
+        public IActionResult TurnosOnline(){
+            Usuario usuarioLogeado = HttpContext.Session.Get<Usuario>("UsuarioLogueado");
+            ViewBag.Nombre = usuarioLogeado.Nombre;
+            ViewBag.Especialidades=db.Especialidad.OrderBy(es => es.Nombre).ToList();
+            return View();
+        }
+
+        public IActionResult TurnoEnviado(){
+            return View();
         }
     }
 }

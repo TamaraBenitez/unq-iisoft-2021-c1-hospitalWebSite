@@ -1794,3 +1794,5 @@ C:\Users\Diego\Desktop\proyecto\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-20
 C:\Users\Diego\Desktop\proyecto\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\Contacto.cshtml.g.cs
 C:\Users\Diego\Desktop\proyecto\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\Prestaciones.cshtml.g.cs
 C:\Users\Diego\Desktop\proyecto\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\Transaccion.cshtml.g.cs
+C:\Users\Diego\Desktop\proyecto\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\TurnosOnline.cshtml.g.cs
+C:\Users\Diego\Desktop\proyecto\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\TurnoEnviado.cshtml.g.cs
