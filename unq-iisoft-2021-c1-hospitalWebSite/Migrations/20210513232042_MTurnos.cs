@@ -65,6 +65,20 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Turno",
+                columns: table => new
+                {
+                    ID = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    MailUsuario = table.Column<string>(type: "TEXT", nullable: false),
+                    Especialidad = table.Column<string>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Turno", x => x.ID);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Usuario",
                 columns: table => new
                 {
@@ -153,6 +167,9 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
 
             migrationBuilder.DropTable(
                 name: "Plan");
+
+            migrationBuilder.DropTable(
+                name: "Turno");
 
             migrationBuilder.DropTable(
                 name: "Usuario");

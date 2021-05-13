@@ -147,6 +147,25 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
                     b.ToTable("Rol");
                 });
 
+            modelBuilder.Entity("Models.Hospital.Turno", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Especialidad")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("MailUsuario")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Turno");
+                });
+
             modelBuilder.Entity("Models.Hospital.Usuario", b =>
                 {
                     b.Property<string>("Mail")

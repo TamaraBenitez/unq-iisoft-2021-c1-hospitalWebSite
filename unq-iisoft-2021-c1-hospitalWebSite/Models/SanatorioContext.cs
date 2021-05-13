@@ -21,5 +21,8 @@ namespace Models.Hospital {
         public DbSet<Plan> Plan { get; set; }
         public DbSet<Nota> Nota { get; set; }
         public DbSet<Especialidad> Especialidad { get; set; }
+
+        public DbSet<Turno> Turno { get; set; }
+
     }
 }

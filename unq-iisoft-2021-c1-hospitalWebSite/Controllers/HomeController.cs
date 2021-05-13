@@ -239,7 +239,15 @@ public IActionResult EliminarCuenta(){
             return View();
         }
 
-        public IActionResult TurnoEnviado(){
+        public IActionResult TurnoEnviado(string especialidad){
+            Usuario user = HttpContext.Session.Get<Usuario>("UsuarioLogueado");
+            var turno = new Turno{
+                MailUsuario=user.Mail,
+                Especialidad=especialidad,
+            };
+            
+             db.Turno.Add(turno);
+            db.SaveChanges();
             return View();
         }
     }
