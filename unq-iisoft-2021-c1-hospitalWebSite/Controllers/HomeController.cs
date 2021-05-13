@@ -210,5 +210,19 @@ public IActionResult EliminarCuenta(){
             ViewBag.ObrasSociales = db.ObraSocial.Where(os => os.Estado == "Activa").OrderBy(os => os.Nombre).ToList();
             return View();
         }
+    
+            public IActionResult Transaccion(){
+            return View();
+        }
+
+        public IActionResult EditarUsuario(string mail, string nombre, string apellido, string obraSocial, string contraseña){
+            Usuario usuario = db.Usuario.FirstOrDefault(u => u.Mail == mail);
+            usuario.ObraSocial = obraSocial;
+            usuario.Contraseña = contraseña;
+
+            db.Usuario.Update(usuario);
+            db.SaveChanges();
+            return View("Transaccion");
+        }
     }
 }

@@ -1789,3 +1789,8 @@ C:\Users\MarianoX\Documents\Isoft\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-
 C:\Users\Leo\Documents\EIS\Nueva carpeta\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\Coberturas.cshtml.g.cs
 C:\Users\Leo\Documents\EIS\Nueva carpeta\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\ConsultaEnviada.cshtml.g.cs
 C:\Users\Leo\Documents\EIS\Nueva carpeta\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\Contacto.cshtml.g.cs
+C:\Users\Diego\Desktop\proyecto\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\Coberturas.cshtml.g.cs
+C:\Users\Diego\Desktop\proyecto\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\ConsultaEnviada.cshtml.g.cs
+C:\Users\Diego\Desktop\proyecto\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\Contacto.cshtml.g.cs
+C:\Users\Diego\Desktop\proyecto\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\Prestaciones.cshtml.g.cs
+C:\Users\Diego\Desktop\proyecto\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\Transaccion.cshtml.g.cs
