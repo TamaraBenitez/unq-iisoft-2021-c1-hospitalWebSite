@@ -58,6 +58,28 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
     }
 
 
+    public IActionResult VerMisTurnos() {
+
+        Usuario usuario= HttpContext.Session.Get<Usuario>("UsuarioLogueado");
+          if (usuario != null ) { 
+
+            List<Turno> turnos = new List<Turno>();
+            turnos = db.Turno.Where(t =>t.MailUsuario.Equals(usuario.Mail)).ToList();
+            if(turnos.Count()==0) {
+
+                return View("SinTurnos");
+            } else {
+
+                return View ("VerMisTurnos",turnos);
+            }
+
+          } else {
+
+              return Redirect("/Home/ErrorUser");
+          }
+       
+    }
+
      public IActionResult Coberturas() {
              ViewBag.ObrasSociales = db.ObraSocial.Include(o => o.Planes).Where(os => os.Estado == "Activa").OrderBy(o => o.Nombre).ToList();
             return View();
