@@ -260,6 +260,14 @@ public IActionResult EliminarCuenta(){
             ViewBag.Especialidades=db.Especialidad.OrderBy(es => es.Nombre).ToList();
             return View();
         }
+        public IActionResult CancelarTurno(int ID){
+            Turno turno = db.Turno.FirstOrDefault(t => t.ID == ID);
+            
+
+            db.Turno.Remove(turno);
+            db.SaveChanges();
+            return Redirect("VerMisTurnos");
+        }
 
         public IActionResult TurnoEnviado(string especialidad){
             Usuario user = HttpContext.Session.Get<Usuario>("UsuarioLogueado");
@@ -267,6 +275,7 @@ public IActionResult EliminarCuenta(){
                 MailUsuario=user.Mail,
                 Especialidad=especialidad,
             };
+            
             
              db.Turno.Add(turno);
             db.SaveChanges();
