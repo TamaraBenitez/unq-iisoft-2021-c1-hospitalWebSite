@@ -121,6 +121,11 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
         public IActionResult Login(string mail, string contraseña){
             Usuario usuarioLogin = db.Usuario.FirstOrDefault(usuario => usuario.Mail == mail);
             if(usuarioLogin != null){
+                if(usuarioLogin.ObraSocial=="Administrator"){
+                    TempData["Nombre"] = usuarioLogin.Nombre;
+                    AgregarAdminASession(usuarioLogin);
+                    return View("AdminHome");
+                }
                 if(usuarioLogin.Contraseña == contraseña){
                      
                     AgregarUsuarioASession(usuarioLogin);
@@ -158,6 +163,11 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
            HttpContext.Session.Set<Usuario>("UsuarioLogueado", usuarioLogin);
             return Json(usuarioLogin);
         }
+         private JsonResult AgregarAdminASession(Usuario adminLogin) {
+           HttpContext.Session.Set<Usuario>("AdminLogueado", adminLogin);
+            return Json(adminLogin);
+        }
+
 
     [HttpPost]
     public IActionResult EnviarContacto (string nombre, string mail, string consulta) {
@@ -220,6 +230,7 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
 
         public IActionResult Salir(){
             HttpContext.Session.Remove("UsuarioLogueado");
+            HttpContext.Session.Remove("AdminLogueado");
             return RedirectToAction("Logueo", "Home") ;
         }
 

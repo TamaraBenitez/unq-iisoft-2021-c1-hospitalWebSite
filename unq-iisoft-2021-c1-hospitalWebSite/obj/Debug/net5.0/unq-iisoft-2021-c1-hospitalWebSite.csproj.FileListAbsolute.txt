@@ -1813,3 +1813,5 @@ C:\Users\MarianoX\Documents\Isoft\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-
 C:\Users\MarianoX\Documents\Isoft\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\TurnoEnviado.cshtml.g.cs
 C:\Users\MarianoX\Documents\Isoft\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\TurnosOnline.cshtml.g.cs
 C:\Users\MarianoX\Documents\Isoft\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\VerMisTurnos.cshtml.g.cs
+C:\Users\Leo\Documents\EIS\Nueva carpeta\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\AdminHome.cshtml.g.cs
+C:\Users\Leo\Documents\EIS\Nueva carpeta\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
