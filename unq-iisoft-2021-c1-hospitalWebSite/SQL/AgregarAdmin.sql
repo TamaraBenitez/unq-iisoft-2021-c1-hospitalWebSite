@@ -1,4 +1,4 @@
 INSERT INTO `Usuario` (Mail, Nombre,Apellido,Contraseña,ObraSocial)
-VALUES ('Chaco@ADMINISTRADOR', 'Administrator','Administrator','SFadmin','Administrator');
+VALUES ('Chaco', 'Administrator','Administrator','SFadmin','Administrator');
 INSERT INTO `Usuario` (Mail, Nombre,Apellido,Contraseña,ObraSocial)
-VALUES ('Leo@ADMINISTRADOR', 'Administrator','Administrator','SFadmin','Administrator');
+VALUES ('Leo', 'Administrator','Administrator','SFadmin','Administrator');
