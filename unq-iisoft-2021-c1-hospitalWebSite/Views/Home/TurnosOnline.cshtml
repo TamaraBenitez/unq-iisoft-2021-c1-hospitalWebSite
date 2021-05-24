@@ -9,7 +9,7 @@
         <label for="obraSocial" style="width:50%;">Especialidad</label>
         <select class="form-control" style="width:50%;" name="especialidad">
          @foreach (var os in ViewBag.Especialidades){
-             <option >@os.ID</option>
+             <option >@os.Nombre</option>
             
          }
         
@@ -17,20 +17,7 @@
     </select>
   </div>
 
-        <div class="col-sm"> <h4 class="title-page">Nombres por codigo:</h4>
-        
-          @foreach (var especialidad in ViewBag.Especialidades ) {
-
-            <ul>
-
-                <li>ID: @especialidad.ID</li>
-                <li>Especialidad: @especialidad.Nombre</li>
-            </ul>}
-        
-        </div>
-
-
-                <button type="submit" id="pedir-turno" class="btn btn-dark">Enviar</button>
+                <button type="submit" id="continua" class="btn btn-dark">Continuar</button>
             </form>
         </div>
     </div>

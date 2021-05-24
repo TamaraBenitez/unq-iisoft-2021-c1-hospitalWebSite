@@ -280,9 +280,9 @@ public IActionResult EliminarCuenta(){
             return Redirect("VerMisTurnos");
         }
 
-        public IActionResult ElegirEspecialista(int especialidad) {
-
-            ViewBag.Medicos= db.Medico.Where( m => m.Especialidad.ID == especialidad).ToList();
+        public IActionResult ElegirEspecialista(string especialidad) {
+          
+            ViewBag.Medicos= db.Medico.Where( m => m.Especialidad.Nombre == especialidad).ToList();
             return View();
 
         }

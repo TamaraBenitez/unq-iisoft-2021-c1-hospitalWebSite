@@ -37,7 +37,7 @@ public class TestSpectflow {
             var submitBtn = driver.FindElement(By.Id("loggin-usuario"));
           
             //Perform Required action with the element
-            usernameBox.SendKeys("tamara16@live.com.ar ");
+            usernameBox.SendKeys("tamara16@live.com.ar");
             System.Threading.Thread.Sleep(2000);
      
             passwordBox.SendKeys("12345");

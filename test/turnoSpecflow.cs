@@ -21,7 +21,7 @@ namespace test {
 public class TurnoSpecflow {
     IWebDriver  driver = new ChromeDriver();
 
-    [Given(@"un turno mas")]
+    [Given(@"un usuario solicita un turno")]
     public void Given(){
 
            driver.Navigate().GoToUrl ("https://localhost:5001/Home/Logueo");
@@ -36,7 +36,7 @@ public class TurnoSpecflow {
             var submitBtn = driver.FindElement(By.Id("loggin-usuario"));
           
             //Perform Required action with the element
-            usernameBox.SendKeys("tamara16@live.com.ar ");
+            usernameBox.SendKeys("tamara16@live.com.ar");
             System.Threading.Thread.Sleep(2000);
      
             passwordBox.SendKeys("12345");
@@ -44,7 +44,7 @@ public class TurnoSpecflow {
         
          
             submitBtn.Click();
-            System.Threading.Thread.Sleep(1000);
+            System.Threading.Thread.Sleep(2000);
 
             driver.Navigate().GoToUrl ("https://localhost:5001/Home/TurnosOnline");
 
@@ -52,9 +52,16 @@ public class TurnoSpecflow {
 
     [When(@"presiona el boton de pedir turno")]
     public void When(){
+            
+            var continuar = driver.FindElement(By.Id("continua"));
+            
+            continuar.Click();
+            System.Threading.Thread.Sleep(1000);
                     //Locate the Web Elements
             var turnosBtn = driver.FindElement(By.Id("pedir-turno"));
+            
             System.Threading.Thread.Sleep(1000);
+
             turnosBtn.Click();
 
     }

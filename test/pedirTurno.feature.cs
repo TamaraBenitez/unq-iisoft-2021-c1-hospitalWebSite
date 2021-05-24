@@ -120,7 +120,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 3
-testRunner.Given("un turno mas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given("un usuario solicita un turno", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 4
 testRunner.When("presiona el boton de pedir turno", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");

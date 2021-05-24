@@ -8,7 +8,7 @@ using global::TechTalk.SpecFlow;
 using global::TechTalk.SpecFlow.MSTest.SpecFlowPlugin;
 using global::System.Runtime.CompilerServices;
 
-[GeneratedCode("SpecFlow", "3.8.7")]
+[GeneratedCode("SpecFlow", "3.8.14")]
 [TestClass]
 public class test_MSTestAssemblyHooks
 {

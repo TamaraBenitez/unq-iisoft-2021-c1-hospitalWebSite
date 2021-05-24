@@ -2006,3 +2006,11 @@ C:\Users\usuario\Desktop\gtr\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-
 C:\Users\usuario\Desktop\gtr\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\unq-iisoft-2021-c1-hospitalWebSite.Views.pdb
 C:\Users\usuario\Desktop\gtr\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\unq-iisoft-2021-c1-hospitalWebSite.csproj.CopyComplete
 C:\Users\usuario\Desktop\gtr\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\unq-iisoft-2021-c1-hospitalWebSite.genruntimeconfig.cache
+C:\Users\Diego\Desktop\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\AdminHome.cshtml.g.cs
+C:\Users\Diego\Desktop\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\ElegirEspecialista.cshtml.g.cs
+C:\Users\Diego\Desktop\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\SinTurnos.cshtml.g.cs
+C:\Users\Diego\Desktop\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\Transaccion.cshtml.g.cs
+C:\Users\Diego\Desktop\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\TurnoEnviado.cshtml.g.cs
+C:\Users\Diego\Desktop\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\TurnosOnline.cshtml.g.cs
+C:\Users\Diego\Desktop\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\VerMisTurnos.cshtml.g.cs
+C:\Users\Diego\Desktop\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
