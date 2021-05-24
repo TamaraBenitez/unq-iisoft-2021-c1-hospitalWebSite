@@ -27,9 +27,9 @@ VALUES (17, 'Dr. Ricardo Cruz', 201, 223);
 
 
 INSERT INTO `Medico` (ID, NombreYApellido, EspecialidadID, RolEnEspecialidadID)
-VALUES (18, 'Dra. María Paula Duczynski', 201, 224);
+VALUES (18, 'Dra. Teresa Calcuta', 201, 224);
 INSERT INTO `Medico` (ID, NombreYApellido, EspecialidadID, RolEnEspecialidadID)
-VALUES (19, 'Dr. Ernesto Duronto', 201, 223);
+VALUES (19, 'Dr. Pablo Quijonto', 201, 223);
 INSERT INTO `Medico` (ID, NombreYApellido, EspecialidadID, RolEnEspecialidadID)
 VALUES (20, 'Dr. Ignacio Biondini', 201, 223);
 INSERT INTO `Medico` (ID, NombreYApellido, EspecialidadID, RolEnEspecialidadID)
@@ -98,7 +98,7 @@ VALUES (46, 'Dr. Pablo Farinelli', 205, 223);
 INSERT INTO `Medico` (ID, NombreYApellido, EspecialidadID, RolEnEspecialidadID)
 VALUES (47, 'Dr. Daniel Eduardo Absi', 206, 221);
 INSERT INTO `Medico` (ID, NombreYApellido, EspecialidadID, RolEnEspecialidadID)
-VALUES (48, 'Dr. Pablo Farinelli', 206, 223);
+VALUES (48, 'Dr. Jesus Farinelli', 206, 223);
 INSERT INTO `Medico` (ID, NombreYApellido, EspecialidadID, RolEnEspecialidadID)
 VALUES (49, 'Dr. Juan Carlos Piazzolla', 206, 223);
 INSERT INTO `Medico` (ID, NombreYApellido, EspecialidadID, RolEnEspecialidadID)
@@ -163,8 +163,7 @@ VALUES (74, 'Dra. Silvana Saldaña', 215, 224);
 INSERT INTO `Medico` (ID, NombreYApellido, EspecialidadID, RolEnEspecialidadID)
 VALUES (75, 'Dra. Julieta Portiglia', 215, 224);
 
-INSERT INTO `Medico` (ID, NombreYApellido, EspecialidadID, RolEnEspecialidadID)
-VALUES (76, 'Dr. Pablo Raffaele', 216, 221);
+
 INSERT INTO `Medico` (ID, NombreYApellido, EspecialidadID, RolEnEspecialidadID)
 VALUES (77, 'Dra. R. Marcela Fortunato', 216, 224);
 INSERT INTO `Medico` (ID, NombreYApellido, EspecialidadID, RolEnEspecialidadID)

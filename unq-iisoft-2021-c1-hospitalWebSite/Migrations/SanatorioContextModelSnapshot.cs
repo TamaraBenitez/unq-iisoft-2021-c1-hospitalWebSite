@@ -37,7 +37,7 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("EspecialidadID")
+                    b.Property<int>("EspecialidadID")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("NombreYApellido")
@@ -157,6 +157,10 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Especialista")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("MailUsuario")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -195,7 +199,9 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
                 {
                     b.HasOne("Models.Hospital.Especialidad", "Especialidad")
                         .WithMany()
-                        .HasForeignKey("EspecialidadID");
+                        .HasForeignKey("EspecialidadID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Models.Hospital.Rol", "RolEnEspecialidad")
                         .WithMany()

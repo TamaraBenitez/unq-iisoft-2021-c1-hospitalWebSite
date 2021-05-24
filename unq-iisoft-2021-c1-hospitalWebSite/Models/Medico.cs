@@ -11,8 +11,12 @@ namespace Models.Hospital {
         public int ID { get; set; }
         [Required]
         public string NombreYApellido { get; set; }
+
         [Required]
-        public Especialidad Especialidad { get; set;}
+        public Especialidad Especialidad {get;set;}
+        
+        [Required]
+        public int EspecialidadID { get; set;}
         [Required]
         public Rol RolEnEspecialidad { get; set; }
 

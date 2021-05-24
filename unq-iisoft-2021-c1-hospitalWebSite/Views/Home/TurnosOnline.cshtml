@@ -2,19 +2,33 @@
     <div class="row">
         <div class="col-sm">
             <h4 class="title-page">Solicitá tu turno</h4>
-            <form method="POST" action='@Url.Action("TurnoEnviado", "Home")'>
+            <form method="POST" action='@Url.Action("ElegirEspecialista", "Home")'>
 
               
                 <div class="form-group">
         <label for="obraSocial" style="width:50%;">Especialidad</label>
         <select class="form-control" style="width:50%;" name="especialidad">
          @foreach (var os in ViewBag.Especialidades){
-             <option >@os.Nombre</option>
+             <option >@os.ID</option>
+            
          }
          <option>Privado</option>
       
     </select>
   </div>
+
+        <div class="col-sm"> <h4 class="title-page">Nombres por codigo:</h4>
+        
+          @foreach (var especialidad in ViewBag.Especialidades ) {
+
+            <ul>
+
+                <li>ID: @especialidad.ID</li>
+                <li>Especialidad: @especialidad.Nombre</li>
+            </ul>}
+        
+        </div>
+
 
                 <button type="submit" id="pedir-turno" class="btn btn-dark">Enviar</button>
             </form>

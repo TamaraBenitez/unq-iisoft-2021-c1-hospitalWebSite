@@ -2,7 +2,7 @@
 
 namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
 {
-    public partial class MTurnos : Migration
+    public partial class Sanatorio : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -71,7 +71,8 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
                     ID = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     MailUsuario = table.Column<string>(type: "TEXT", nullable: false),
-                    Especialidad = table.Column<string>(type: "TEXT", nullable: false)
+                    Especialidad = table.Column<string>(type: "TEXT", nullable: false),
+                    Especialista = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -121,7 +122,7 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
                     ID = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     NombreYApellido = table.Column<string>(type: "TEXT", nullable: false),
-                    EspecialidadID = table.Column<int>(type: "INTEGER", nullable: true),
+                    EspecialidadID = table.Column<int>(type: "INTEGER", nullable: false),
                     RolEnEspecialidadID = table.Column<int>(type: "INTEGER", nullable: true)
                 },
                 constraints: table =>
@@ -132,7 +133,7 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Migrations
                         column: x => x.EspecialidadID,
                         principalTable: "Especialidad",
                         principalColumn: "ID",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Medico_Rol_RolEnEspecialidadID",
                         column: x => x.RolEnEspecialidadID,

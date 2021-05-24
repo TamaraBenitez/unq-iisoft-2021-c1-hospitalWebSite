@@ -14,6 +14,10 @@ namespace Models.Hospital {
         public string MailUsuario { get; set; }   
         [Required]
         public string Especialidad { get; set; }
+
+
+        [Required]
+        public string Especialista {get;set;}
     }
         
 }

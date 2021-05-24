@@ -280,16 +280,28 @@ public IActionResult EliminarCuenta(){
             return Redirect("VerMisTurnos");
         }
 
-        public IActionResult TurnoEnviado(string especialidad){
-            Usuario user = HttpContext.Session.Get<Usuario>("UsuarioLogueado");
-            var turno = new Turno{
+        public IActionResult ElegirEspecialista(int especialidad) {
+
+            ViewBag.Medicos= db.Medico.Where( m => m.Especialidad.ID == especialidad).ToList();
+            return View();
+
+        }
+
+        public IActionResult TurnoEnviado(string especialista){
+         
+           Usuario user = HttpContext.Session.Get<Usuario>("UsuarioLogueado");
+           Medico medico = db.Medico.FirstOrDefault(m => m.NombreYApellido == especialista );
+           Especialidad especialidad = db.Especialidad.FirstOrDefault(e => e.ID.Equals(medico.EspecialidadID));
+
+           var turno = new Turno{
                 MailUsuario=user.Mail,
-                Especialidad=especialidad,
+                Especialidad=especialidad.Nombre,
+                Especialista= especialista,
             };
-            
-            
-             db.Turno.Add(turno);
+          
+            db.Turno.Add(turno);
             db.SaveChanges();
+
             return View();
         }
     }
