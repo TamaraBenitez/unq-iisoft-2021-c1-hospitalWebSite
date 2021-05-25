@@ -56,10 +56,8 @@ public class TestLoginAdminSpectflow {
 
     [Then(@"le aparece un cartel que se logeo como admin correctamente")]
     public void Then(){
-        var res = driver.FindElement(By.Id("adminSuccess"));  
-        Assert.IsNotNull(res);
+        Assert.AreEqual(driver.Url,"https://localhost:5001/Home/AdminHome");
         driver.Close();
-
     }
 
     [TestCleanup]

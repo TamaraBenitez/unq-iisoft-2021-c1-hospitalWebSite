@@ -90,6 +90,10 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
         return View();
     }
 
+    public IActionResult AdminHome() {
+
+        return View();
+    }
     public IActionResult RegistroResult(){
             return View();
         }
@@ -103,11 +107,17 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
         public IActionResult Logueo()
         {
             Usuario user = HttpContext.Session.Get<Usuario>("UsuarioLogueado");
-                if(user==null){
-            return View();
+            Usuario userAdmin = HttpContext.Session.Get<Usuario>("AdminLogueado");
+                if(user!=null){
+            return View("LogueoResult");
             }
             else {
-                return View("LogueoResult");
+                if(userAdmin!=null){
+                return View("AdminHome");
+                }
+                else{
+                    return View();
+                }
             }
         }
        
@@ -124,7 +134,7 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
                 if(usuarioLogin.ObraSocial=="Administrator"){
                     TempData["Nombre"] = usuarioLogin.Nombre;
                     AgregarAdminASession(usuarioLogin);
-                    return View("AdminHome");
+                    return RedirectToAction("AdminHome", "Home");
                 }
                 if(usuarioLogin.Contraseña == contraseña){
                      
