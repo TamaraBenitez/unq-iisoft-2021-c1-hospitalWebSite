@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj",
+  "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,143 +15619,143 @@
   "RootNamespace": "unq_iisoft_2021_c1_hospitalWebSite",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\ElegirEspecialista.cshtml",
-      "TargetPath": "Views\\Home\\ElegirEspecialista.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Prestaciones.cshtml",
-      "TargetPath": "Views\\Home\\Prestaciones.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Historia.cshtml",
-      "TargetPath": "Views\\Home\\Historia.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Contacto.cshtml",
-      "TargetPath": "Views\\Home\\Contacto.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\LogueoResult.cshtml",
-      "TargetPath": "Views\\Home\\LogueoResult.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Shared\\_LayoutAdmin.cshtml",
-      "TargetPath": "Views\\Shared\\_LayoutAdmin.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\AdminHome.cshtml",
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\AdminHome.cshtml",
       "TargetPath": "Views\\Home\\AdminHome.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\TurnosOnline.cshtml",
-      "TargetPath": "Views\\Home\\TurnosOnline.cshtml",
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Logueo.cshtml",
-      "TargetPath": "Views\\Home\\Logueo.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Coberturas.cshtml",
-      "TargetPath": "Views\\Home\\Coberturas.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\RegistroResult.cshtml",
-      "TargetPath": "Views\\Home\\RegistroResult.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Registro.cshtml",
-      "TargetPath": "Views\\Home\\Registro.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\MiPerfil.cshtml",
-      "TargetPath": "Views\\Home\\MiPerfil.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\VerMisTurnos.cshtml",
-      "TargetPath": "Views\\Home\\VerMisTurnos.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Shared\\_LayoutUser.cshtml",
-      "TargetPath": "Views\\Shared\\_LayoutUser.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\SinTurnos.cshtml",
-      "TargetPath": "Views\\Home\\SinTurnos.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Autoridades.cshtml",
-      "TargetPath": "Views\\Home\\Autoridades.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\TurnoEnviado.cshtml",
-      "TargetPath": "Views\\Home\\TurnoEnviado.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Transaccion.cshtml",
-      "TargetPath": "Views\\Home\\Transaccion.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\ConsultaEnviada.cshtml",
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\ConsultaEnviada.cshtml",
       "TargetPath": "Views\\Home\\ConsultaEnviada.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Staff.cshtml",
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\TurnosOnline.cshtml",
+      "TargetPath": "Views\\Home\\TurnosOnline.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Coberturas.cshtml",
+      "TargetPath": "Views\\Home\\Coberturas.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\VerMisTurnos.cshtml",
+      "TargetPath": "Views\\Home\\VerMisTurnos.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\ElegirEspecialista.cshtml",
+      "TargetPath": "Views\\Home\\ElegirEspecialista.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\LogueoResult.cshtml",
+      "TargetPath": "Views\\Home\\LogueoResult.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Staff.cshtml",
       "TargetPath": "Views\\Home\\Staff.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Shared\\Error.cshtml",
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\SinTurnos.cshtml",
+      "TargetPath": "Views\\Home\\SinTurnos.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Shared\\_LayoutUser.cshtml",
+      "TargetPath": "Views\\Shared\\_LayoutUser.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Prestaciones.cshtml",
+      "TargetPath": "Views\\Home\\Prestaciones.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Registro.cshtml",
+      "TargetPath": "Views\\Home\\Registro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Autoridades.cshtml",
+      "TargetPath": "Views\\Home\\Autoridades.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\TurnoEnviado.cshtml",
+      "TargetPath": "Views\\Home\\TurnoEnviado.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Shared\\_LayoutAdmin.cshtml",
+      "TargetPath": "Views\\Shared\\_LayoutAdmin.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Historia.cshtml",
+      "TargetPath": "Views\\Home\\Historia.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Logueo.cshtml",
+      "TargetPath": "Views\\Home\\Logueo.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\MiPerfil.cshtml",
+      "TargetPath": "Views\\Home\\MiPerfil.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Contacto.cshtml",
+      "TargetPath": "Views\\Home\\Contacto.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Transaccion.cshtml",
+      "TargetPath": "Views\\Home\\Transaccion.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Home\\RegistroResult.cshtml",
+      "TargetPath": "Views\\Home\\RegistroResult.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\usuario\\Desktop\\IISOFT\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     }
   ],

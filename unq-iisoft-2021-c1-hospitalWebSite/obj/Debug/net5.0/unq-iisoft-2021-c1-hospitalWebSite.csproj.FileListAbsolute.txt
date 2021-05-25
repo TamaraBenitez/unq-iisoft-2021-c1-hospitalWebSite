@@ -2015,3 +2015,6 @@ C:\Users\Diego\Desktop\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hos
 C:\Users\Diego\Desktop\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\VerMisTurnos.cshtml.g.cs
 C:\Users\Diego\Desktop\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
 C:\Users\Leo\Documents\EIS\Nueva carpeta\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\ElegirEspecialista.cshtml.g.cs
+C:\Users\usuario\Desktop\IISOFT\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\AdminHome.cshtml.g.cs
+C:\Users\usuario\Desktop\IISOFT\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\ElegirEspecialista.cshtml.g.cs
+C:\Users\usuario\Desktop\IISOFT\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
