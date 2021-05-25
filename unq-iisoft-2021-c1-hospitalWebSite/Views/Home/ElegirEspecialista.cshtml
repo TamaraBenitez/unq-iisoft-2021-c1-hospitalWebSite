@@ -7,7 +7,7 @@
               
                 <div class="form-group">
         <label for="obraSocial" style="width:50%;">Especialistas</label>
-        <select class="form-control" style="width:50%;" name="especialista">
+        <select class="form-control" id="especialista" style="width:50%;" name="especialista">
          @foreach (var os in ViewBag.Medicos){
              <option >@os.NombreYApellido</option>
          }
