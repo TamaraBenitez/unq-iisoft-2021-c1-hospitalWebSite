@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\test\\test.csproj": {}
+    "C:\\Users\\MarianoX\\Documents\\Isoft\\unq-iisoft-2021-c1-hospitalWebSite\\test\\test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\test\\test.csproj": {
+    "C:\\Users\\MarianoX\\Documents\\Isoft\\unq-iisoft-2021-c1-hospitalWebSite\\test\\test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\test\\test.csproj",
+        "projectUniqueName": "C:\\Users\\MarianoX\\Documents\\Isoft\\unq-iisoft-2021-c1-hospitalWebSite\\test\\test.csproj",
         "projectName": "test",
-        "projectPath": "C:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\test\\test.csproj",
-        "packagesPath": "C:\\Users\\Leo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\test\\obj\\",
+        "projectPath": "C:\\Users\\MarianoX\\Documents\\Isoft\\unq-iisoft-2021-c1-hospitalWebSite\\test\\test.csproj",
+        "packagesPath": "C:\\Users\\MarianoX\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MarianoX\\Documents\\Isoft\\unq-iisoft-2021-c1-hospitalWebSite\\test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Leo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\MarianoX\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -26,8 +26,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj": {
-                "projectPath": "C:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj"
+              "C:\\Users\\MarianoX\\Documents\\Isoft\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj": {
+                "projectPath": "C:\\Users\\MarianoX\\Documents\\Isoft\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj"
               }
             }
           }
@@ -65,6 +65,10 @@
             "Moq": {
               "target": "Package",
               "version": "[4.16.1, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[3.141.0, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",
@@ -106,17 +110,17 @@
         }
       }
     },
-    "C:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj": {
+    "C:\\Users\\MarianoX\\Documents\\Isoft\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj",
+        "projectUniqueName": "C:\\Users\\MarianoX\\Documents\\Isoft\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj",
         "projectName": "unq-iisoft-2021-c1-hospitalWebSite",
-        "projectPath": "C:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj",
-        "packagesPath": "C:\\Users\\Leo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Leo\\Documents\\EIS\\Nueva carpeta\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\obj\\",
+        "projectPath": "C:\\Users\\MarianoX\\Documents\\Isoft\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite.csproj",
+        "packagesPath": "C:\\Users\\MarianoX\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MarianoX\\Documents\\Isoft\\unq-iisoft-2021-c1-hospitalWebSite\\unq-iisoft-2021-c1-hospitalWebSite\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Leo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\MarianoX\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"

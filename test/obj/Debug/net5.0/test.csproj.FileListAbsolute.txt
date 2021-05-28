@@ -988,3 +988,4 @@ C:\Users\Leo\Documents\EIS\Nueva carpeta\unq-iisoft-2021-c1-hospitalWebSite\test
 C:\Users\Leo\Documents\EIS\Nueva carpeta\unq-iisoft-2021-c1-hospitalWebSite\test\obj\Debug\net5.0\ref\test.dll
 C:\Users\Leo\Documents\EIS\Nueva carpeta\unq-iisoft-2021-c1-hospitalWebSite\test\obj\Debug\net5.0\test.pdb
 C:\Users\Leo\Documents\EIS\Nueva carpeta\unq-iisoft-2021-c1-hospitalWebSite\test\obj\Debug\net5.0\test.genruntimeconfig.cache
+C:\Users\MarianoX\Documents\Isoft\unq-iisoft-2021-c1-hospitalWebSite\test\bin\Debug\net5.0\WebDriver.Support.dll
