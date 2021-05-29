@@ -114,6 +114,45 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
             return View("ResultadoDelProceso");
         }
 
+         public IActionResult VerObrasSociales(){
+            ViewBag.ObrasSociales = db.ObraSocial.OrderBy(o => o.Nombre).ToList();
+            return View();
+        }
+
+
+        [HttpPost]
+        public IActionResult EditarObraSocial(int ID, string nombre, string web, string estado) {
+            ObraSocial obraSocial = db.ObraSocial.FirstOrDefault(os => os.ID == ID);
+            obraSocial.Nombre = nombre;
+            obraSocial.PaginaWeb = web;
+            obraSocial.Estado = estado;
+
+            db.ObraSocial.Update(obraSocial);
+            db.SaveChanges();
+
+            return Redirect("VerObrasSociales");
+        }
+
+        [HttpPost]
+        public IActionResult AgregarObraSocial(string nombre, string web, string estado){
+            ObraSocial obraSocial = db.ObraSocial.FirstOrDefault(os => os.Nombre == nombre);
+            if(obraSocial != null){
+                ViewBag.Error = true;
+                return View("ResultadoDelProceso");
+            }
+            ObraSocial nuevaOS = new ObraSocial{
+                Nombre = nombre,
+                PaginaWeb = web,
+                Estado = estado
+            };
+
+            ViewBag.Boton = "Obras Sociales";
+            ViewBag.URL = "/Home/VerObrasSociales";
+            ViewBag.Info = "La obra social " + nombre + " fue agregada con exito !" ;
+            db.ObraSocial.Add(nuevaOS);
+            db.SaveChanges();
+            return View("ResultadoDelProceso");
+        }
 
      public IActionResult Coberturas() {
              ViewBag.ObrasSociales = db.ObraSocial.Include(o => o.Planes).Where(os => os.Estado == "Activa").OrderBy(o => o.Nombre).ToList();
