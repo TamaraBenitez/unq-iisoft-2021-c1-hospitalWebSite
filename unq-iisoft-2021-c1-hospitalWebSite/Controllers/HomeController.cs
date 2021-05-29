@@ -79,6 +79,41 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
           }
        
     }
+      public IActionResult VerMedicos(){
+            ViewBag.Medicos = db.Medico.Include(m => m.RolEnEspecialidad).Include(m => m.Especialidad).OrderBy(m => m.Especialidad.Nombre).ToList();
+            ViewBag.Especialidades = db.Especialidad.ToList();
+            ViewBag.Roles = db.Rol.ToList();
+            return View();
+        }
+        public IActionResult AgregarDatos(){
+             ViewBag.Especialidades = db.Especialidad.ToList();
+            ViewBag.Roles = db.Rol.ToList();
+            return View();
+        }
+    public IActionResult ResultadoDelProceso(){
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult AgregarMedico(string nombreYApellido, string especialidad, string rolEnEspecialidad) {
+            Especialidad esp = db.Especialidad.FirstOrDefault(e => e.Nombre == especialidad);
+            ViewBag.Especialidades = db.Especialidad.FirstOrDefault(e => e.Nombre == especialidad);
+            
+            Rol rol = db.Rol.FirstOrDefault(r => r.Nombre == rolEnEspecialidad);
+            Medico nuevoMedico = new Medico{
+                NombreYApellido = nombreYApellido,
+                Especialidad = esp,
+                RolEnEspecialidad = rol
+            };
+            
+            ViewBag.Boton = "Medicos";
+            ViewBag.URL = "/Home/VerMedicos";
+            ViewBag.Info = " El profesional " + nombreYApellido + " con la especialidad " + especialidad + " fue agregado con exito !";
+            db.Medico.Add(nuevoMedico);
+            db.SaveChanges();
+            return View("ResultadoDelProceso");
+        }
+
 
      public IActionResult Coberturas() {
              ViewBag.ObrasSociales = db.ObraSocial.Include(o => o.Planes).Where(os => os.Estado == "Activa").OrderBy(o => o.Nombre).ToList();
