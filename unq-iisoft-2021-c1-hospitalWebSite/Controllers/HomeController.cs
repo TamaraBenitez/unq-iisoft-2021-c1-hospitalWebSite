@@ -388,5 +388,17 @@ public IActionResult EliminarCuenta(){
 
             return View();
         }
+
+    
+ public IActionResult EliminarMedico(int ID)
+        {
+            Medico medico = db.Medico.FirstOrDefault(m => m.ID == ID);
+            
+            db.Medico.Remove(medico);
+            db.SaveChanges();
+
+            return Redirect("VerMedicos");
+        }
+
     }
 }
