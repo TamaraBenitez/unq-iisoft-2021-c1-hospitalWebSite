@@ -57,7 +57,25 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
         return View();
     }
 
-
+    public IActionResult AgregarNota(string titulo, string cuerpo, string fecha, string imagen, string URLnota){
+            Nota nuevaNota = new Nota{
+                Titulo = titulo,
+                Cuerpo = cuerpo,
+                Fecha = fecha,
+                URLImagen = imagen,
+                URLNotaCompleta = URLnota
+            };
+            ViewBag.Boton = "Notas";
+            ViewBag.URL = "/Home/VerNotas";
+            ViewBag.Info = "La nota " + titulo + " fue agregada con exito !";
+            db.Nota.Add(nuevaNota);
+            db.SaveChanges();
+            return View("ResultadoDelProceso");
+        }
+        public IActionResult VerNotas(){
+            ViewBag.Notas = db.Nota.ToList();
+            return View("VerNotas"); 
+        }
     public IActionResult VerMisTurnos() {
 
         Usuario usuario= HttpContext.Session.Get<Usuario>("UsuarioLogueado");

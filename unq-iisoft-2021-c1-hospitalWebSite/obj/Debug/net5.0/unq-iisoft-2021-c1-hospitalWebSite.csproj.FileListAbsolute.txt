@@ -2223,3 +2223,5 @@ C:\Users\Diego\Desktop\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hos
 C:\Users\Diego\Desktop\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\ResultadoDelProceso.cshtml.g.cs
 C:\Users\Diego\Desktop\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\VerMedicos.cshtml.g.cs
 C:\Users\Diego\Desktop\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\VerObrasSociales.cshtml.g.cs
+C:\Users\Leo\Documents\EIS\Nueva carpeta\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\VerNotas.cshtml.g.cs
+C:\Users\Leo\Documents\EIS\Nueva carpeta\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\VerObrasSociales.cshtml.g.cs

@@ -43,7 +43,39 @@
             </div>
         </div>
 
+        <div class="col mb-4">
+            <div class="card" style="background-color: wheat;">
+                <div class="card-body">
+                    <h5 class="card-title">Agregar una Nota</h5>
+                    <div class="card-text" style="font-family: 'Quicksand', sans-serif;">
+                        <form class="px-4 py-3" method="POST" asp-action="AgregarNota">
 
+                            <div class="form-group">
+                                <label for="titulo">Título</label>
+                                <input type="text" class="form-control" name="titulo" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cuerpo">Cuerpo</label>
+                                 <textarea type="text" class="form-control" name="cuerpo" required ></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="fecha">Fecha de publicación</label>
+                                <input type="text" class="form-control" name="fecha" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="imagen">URL de la Imagen</label>
+                                <input type="text" class="form-control" name="imagen" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="URLnota">URL Nota Completa</label>
+                                <input type="text" class="form-control" name="URLnota" required>
+                            </div>
+                            <button type="submit" class="btn btn-dark">Guardar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="col mb-4">
             <div class="card" style="background-color: wheat;">
                 <div class="card-body">
