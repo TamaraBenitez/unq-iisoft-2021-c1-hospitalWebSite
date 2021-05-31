@@ -406,6 +406,14 @@ public IActionResult EliminarCuenta(){
 
             return View();
         }
+        public IActionResult EliminarNota(int ID){
+            Nota nota = db.Nota.FirstOrDefault(n => n.ID == ID);
+            
+            db.Nota.Remove(nota);
+            db.SaveChanges();
+
+            return Redirect("VerNotas");
+        }
 
     
  public IActionResult EliminarMedico(int ID)
