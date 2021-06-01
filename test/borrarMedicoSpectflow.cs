@@ -42,7 +42,7 @@ public void LoguearYVerMedicos(){
      
             passwordBox.SendKeys("SFadmin");
             System.Threading.Thread.Sleep(2000);
-
+        driver.Navigate().GoToUrl ("https://localhost:5001/Home/VerMedicos");  
         var verMedicos= driver.FindElement(By.XPath("/html/body/header/nav/div/div/ul/li[2]/a"));
         verMedicos.Click();
         System.Threading.Thread.Sleep(2000);

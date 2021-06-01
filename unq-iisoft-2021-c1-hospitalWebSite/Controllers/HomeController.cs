@@ -33,10 +33,10 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+    public IActionResult Privacy()
+    {
+        return View();
+    }
 
     public IActionResult Prestaciones() {
 
@@ -137,6 +137,14 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
             return View();
         }
 
+        public IActionResult EliminarObraSocial(int ID) {
+            ObraSocial obraSocial = db.ObraSocial.FirstOrDefault(os => os.ID == ID);
+            
+            db.ObraSocial.Remove(obraSocial);
+            db.SaveChanges();
+
+            return Redirect("VerObrasSociales");
+        }
 
         [HttpPost]
         public IActionResult EditarObraSocial(int ID, string nombre, string web, string estado) {
