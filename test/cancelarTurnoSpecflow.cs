@@ -54,13 +54,13 @@ public class cancelarTurnoSpecflow {
     public void When(){
         //Locate the Web Elements
         
-        var cancelar = driver.FindElement(By.Id("btn-16"));
+        var cancelar = driver.FindElement(By.XPath("/html/body/div/main/div/div/div[1]/button"));
         turnos = driver.FindElements(By.TagName("ul")).Count();
         System.Threading.Thread.Sleep(1000);
 
         cancelar.Click();
         System.Threading.Thread.Sleep(2000);
-        var aceptar = driver.FindElement(By.XPath("/html/body/div/main/div/div/div[6]/div/div/div/form/div[2]/button[2]"));
+        var aceptar = driver.FindElement(By.XPath("/html/body/div[1]/main/div/div/div[1]/div/div/div/form/div[2]/button[2]"));
         System.Threading.Thread.Sleep(1000);
         aceptar.Click();
     }
