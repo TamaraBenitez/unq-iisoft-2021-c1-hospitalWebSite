@@ -47,17 +47,17 @@ public void LoguearYVerMedicos(){
         var verMedicos= driver.FindElement(By.XPath("/html/body/header/nav/div/div/ul/li[2]/a"));
         verMedicos.Click();
         System.Threading.Thread.Sleep(2000);
-        medico = driver.FindElement(By.XPath("/html/body/div/main/div/div/div[2]/div/h5/")).Text;
+        medico = driver.FindElement(By.XPath("/html/body/div/main/div/div/div[1]/div[1]/h5")).Text;
 }
 
 [When(@"presiona el boton borrar y confirma el borrado")]
 public void ClickBorrar(){
-
-   var eliminaMedico = driver.FindElement(By.XPath("/html/body/div/main/div/div/div[2]/div/button[2]"));
+  
+   var eliminaMedico = driver.FindElement(By.XPath("/html/body/div/main/div/div/div[1]/div[1]/button"));
    System.Threading.Thread.Sleep(2000);
   eliminaMedico.Click();
   System.Threading.Thread.Sleep(2000);
-  var borrar =driver.FindElement(By.XPath("//*[@id='deleteConfirmModal8']/div/div/form/div[2]/button[2]"));
+  var borrar =driver.FindElement(By.XPath("/html/body/div[1]/main/div/div/div[1]/div[2]/div/div/form/div[2]/button[2]"));
   borrar.Click();
 }
 
