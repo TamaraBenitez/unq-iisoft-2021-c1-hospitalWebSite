@@ -20,7 +20,8 @@ namespace test {
 [Binding]
 public class cancelarTurnoSpecflow {
     IWebDriver  driver = new ChromeDriver();
-    IReadOnlyList<IWebElement> turnos;
+    string turno;
+    int turnos;
 
     [Given(@"un usuario solicita cancelar un turno")]
     public void Given(){
@@ -52,20 +53,22 @@ public class cancelarTurnoSpecflow {
     [When(@"presiona el boton de cancelar turno")]
     public void When(){
         //Locate the Web Elements
-        IReadOnlyList<IWebElement> turnos = driver.FindElements(By.TagName("ul"));
-        var cancelar = driver.FindElement(By.Id("btn-9"));
+        
+        var cancelar = driver.FindElement(By.Id("btn-16"));
+        turnos = driver.FindElements(By.TagName("ul")).Count();
         System.Threading.Thread.Sleep(1000);
 
         cancelar.Click();
-        System.Threading.Thread.Sleep(1000);
-        var aceptar = driver.FindElement(By.Id("btn-si"));
+        System.Threading.Thread.Sleep(2000);
+        var aceptar = driver.FindElement(By.XPath("/html/body/div/main/div/div/div[6]/div/div/div/form/div[2]/button[2]"));
         System.Threading.Thread.Sleep(1000);
         aceptar.Click();
     }
 
     [Then(@"se pierde un turno")]
     public void Then(){
-        Assert.IsTrue(12 != driver.FindElements(By.TagName("ul")).Count());
+        var actualTurnos = driver.FindElements(By.TagName("ul")).Count();
+        Assert.AreNotEqual(turnos, actualTurnos);
         driver.Close();
     }
 

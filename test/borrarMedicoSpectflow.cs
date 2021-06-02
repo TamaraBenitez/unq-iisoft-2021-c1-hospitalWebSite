@@ -29,20 +29,21 @@ public class BorrarMedicoSpecflow {
 public void LoguearYVerMedicos(){
 
   driver.Navigate().GoToUrl ("https://localhost:5001/Home/Logueo");
-          driver.Manage().Window.Maximize();
+        driver.Manage().Window.Maximize();
             
-            System.Threading.Thread.Sleep(2000);
+        System.Threading.Thread.Sleep(2000);
 
-         var usernameBox = driver.FindElement(By.Id("user_email"));            
-            
-            var passwordBox = driver.FindElement(By.Id("user_password"));           
-            //Perform Required action with the element
-            usernameBox.SendKeys("Leo");
-            System.Threading.Thread.Sleep(2000);
+        var usernameBox = driver.FindElement(By.Id("user_email"));            
+        var submitBtn = driver.FindElement(By.Id("loggin-usuario"));
+        var passwordBox = driver.FindElement(By.Id("user_password"));           
+        //Perform Required action with the element
+        usernameBox.SendKeys("Leo");
+        System.Threading.Thread.Sleep(2000);
      
-            passwordBox.SendKeys("SFadmin");
-            System.Threading.Thread.Sleep(2000);
-        driver.Navigate().GoToUrl ("https://localhost:5001/Home/VerMedicos");  
+        passwordBox.SendKeys("SFadmin");
+        System.Threading.Thread.Sleep(2000); 
+        submitBtn.Click();
+        System.Threading.Thread.Sleep(2000);
         var verMedicos= driver.FindElement(By.XPath("/html/body/header/nav/div/div/ul/li[2]/a"));
         verMedicos.Click();
         System.Threading.Thread.Sleep(2000);
@@ -55,9 +56,9 @@ public void ClickBorrar(){
    var eliminaMedico = driver.FindElement(By.XPath("/html/body/div/main/div/div/div[2]/div/button[2]"));
    System.Threading.Thread.Sleep(2000);
   eliminaMedico.Click();
-System.Threading.Thread.Sleep(2000);
-var borrar =driver.FindElement(By.XPath("//*[@id='deleteConfirmModal8']/div/div/form/div[2]/button[2]"));
-borrar.Click();
+  System.Threading.Thread.Sleep(2000);
+  var borrar =driver.FindElement(By.XPath("//*[@id='deleteConfirmModal8']/div/div/form/div[2]/button[2]"));
+  borrar.Click();
 }
 
 
