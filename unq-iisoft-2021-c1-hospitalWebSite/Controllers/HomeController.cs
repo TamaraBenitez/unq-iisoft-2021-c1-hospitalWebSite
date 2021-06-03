@@ -17,6 +17,7 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly SanatorioContext db;
 
+        public Usuario userOrAdminSession = null;
         public HomeController(ILogger<HomeController> logger,SanatorioContext contexto)
         {
             _logger = logger;
@@ -25,7 +26,7 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
 
         public IActionResult Index()
         {
-            Usuario usuarioLogueado = HttpContext.Session.Get<Usuario>("UsuarioLogueado");
+            Usuario usuarioLogueado = CheckSessionOrDefault("UsuarioLogueado");
             if(usuarioLogueado != null){
                 ViewBag.NombreUsuario = usuarioLogueado.Nombre;
             }
@@ -73,12 +74,17 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
             return View("ResultadoDelProceso");
         }
         public IActionResult VerNotas(){
+            if(CheckSessionOrDefault("AdminLogueado")!=null){
             ViewBag.Notas = db.Nota.ToList();
-            return View("VerNotas"); 
+            return View("VerNotas");
+             }
+            else {
+                return Redirect("Logueo");
+            }
         }
     public IActionResult VerMisTurnos() {
 
-        Usuario usuario= HttpContext.Session.Get<Usuario>("UsuarioLogueado");
+        Usuario usuario= CheckSessionOrDefault("UsuarioLogueado");
           if (usuario != null ) { 
 
             List<Turno> turnos = new List<Turno>();
@@ -98,15 +104,25 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
        
     }
       public IActionResult VerMedicos(){
+          if(CheckSessionOrDefault("AdminLogueado") !=null){
             ViewBag.Medicos = db.Medico.Include(m => m.RolEnEspecialidad).Include(m => m.Especialidad).OrderBy(m => m.Especialidad.Nombre).ToList();
             ViewBag.Especialidades = db.Especialidad.ToList();
             ViewBag.Roles = db.Rol.ToList();
             return View();
+            }
+            else {
+                return Redirect("Logueo");
+            }
         }
         public IActionResult AgregarDatos(){
+            if(CheckSessionOrDefault("AdminLogueado")!=null){
              ViewBag.Especialidades = db.Especialidad.ToList();
             ViewBag.Roles = db.Rol.ToList();
             return View();
+            }
+            else{
+                return Redirect("Logueo");
+            }
         }
     public IActionResult ResultadoDelProceso(){
             return View();
@@ -133,17 +149,26 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
         }
 
          public IActionResult VerObrasSociales(){
+             if(CheckSessionOrDefault("AdminLogueado")!=null){
             ViewBag.ObrasSociales = db.ObraSocial.OrderBy(o => o.Nombre).ToList();
             return View();
+             }
+             else 
+             {
+                 return Redirect("Logueo");
+             }
         }
 
         public IActionResult EliminarObraSocial(int ID) {
+          if(CheckSessionOrDefault("AdminLogueado")!=null){
             ObraSocial obraSocial = db.ObraSocial.FirstOrDefault(os => os.ID == ID);
             
             db.ObraSocial.Remove(obraSocial);
             db.SaveChanges();
 
             return Redirect("VerObrasSociales");
+          }
+          return Redirect("Logueo");
         }
 
         [HttpPost]
@@ -191,8 +216,11 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
     }
 
     public IActionResult AdminHome() {
-
-        return View();
+        if(CheckSessionOrDefault("AdminLogueado")!=null){
+        return View();}
+        else {
+            return Redirect("Logueo");
+        }
     }
     public IActionResult RegistroResult(){
             return View();
@@ -206,8 +234,8 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
 
         public IActionResult Logueo()
         {
-            Usuario user = HttpContext.Session.Get<Usuario>("UsuarioLogueado");
-            Usuario userAdmin = HttpContext.Session.Get<Usuario>("AdminLogueado");
+            Usuario user = CheckSessionOrDefault("UsuarioLogueado");
+            Usuario userAdmin = CheckSessionOrDefault("AdminLogueado");
                 if(user!=null){
             return View("LogueoResult");
             }
@@ -251,7 +279,7 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
         }
 
        public IActionResult MiPerfil(){
-            Usuario usuarioLogeado = HttpContext.Session.Get<Usuario>("UsuarioLogueado");
+            Usuario usuarioLogeado = CheckSessionOrDefault("UsuarioLogueado");
             Usuario user = db.Usuario.FirstOrDefault(u => u.Mail == usuarioLogeado.Mail);
             ViewBag.Nombre = user.Nombre;
             ViewBag.Apellido = user.Apellido;
@@ -346,7 +374,7 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
 
 
 public IActionResult EliminarCuenta(){
-            Usuario user = HttpContext.Session.Get<Usuario>("UsuarioLogueado");
+            Usuario user = CheckSessionOrDefault("UsuarioLogueado");
             HttpContext.Session.Remove("UsuarioLogueado");
             Usuario usuario = db.Usuario.FirstOrDefault(u => u.Mail == user.Mail);
             db.Usuario.Remove(usuario);
@@ -376,7 +404,7 @@ public IActionResult EliminarCuenta(){
     
     
         public IActionResult TurnosOnline(){
-            Usuario usuarioLogeado = HttpContext.Session.Get<Usuario>("UsuarioLogueado");
+            Usuario usuarioLogeado =CheckSessionOrDefault("UsuarioLogueado");
             ViewBag.Nombre = usuarioLogeado.Nombre;
             ViewBag.Especialidades=db.Especialidad.OrderBy(es => es.Nombre).ToList();
             return View();
@@ -399,7 +427,7 @@ public IActionResult EliminarCuenta(){
 
         public IActionResult TurnoEnviado(string especialista){
          
-           Usuario user = HttpContext.Session.Get<Usuario>("UsuarioLogueado");
+           Usuario user =CheckSessionOrDefault("UsuarioLogueado");
            Medico medico = db.Medico.FirstOrDefault(m => m.NombreYApellido == especialista );
            Especialidad especialidad = db.Especialidad.FirstOrDefault(e => e.ID.Equals(medico.EspecialidadID));
 
@@ -433,6 +461,15 @@ public IActionResult EliminarCuenta(){
 
             return Redirect("VerMedicos");
         }
+
+    public Usuario CheckSessionOrDefault(string key){
+        if(HttpContext.Session.Get<Usuario>(key) == null){
+            return userOrAdminSession;
+        }
+        else{
+            return HttpContext.Session.Get<Usuario>(key);
+        }
+    }
 
     }
 }

@@ -31,6 +31,7 @@ namespace test
              context = new SanatorioContext(opciones);
             var logger = new Mock<ILogger<HomeController>>().Object;
             controller = new HomeController(logger,context);
+            controller.userOrAdminSession= new Usuario{Mail="tamara16@live.com.ar", Nombre="string nombre",Apellido= "string apellido", ObraSocial= "string obraSocial",Contraseña= "12345" };
             controller.ControllerContext=new ControllerContext();
             controller.ControllerContext.HttpContext= new DefaultHttpContext();
             var session= new Mock<ISession>();
