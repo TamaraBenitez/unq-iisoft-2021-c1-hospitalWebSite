@@ -74,7 +74,48 @@ namespace test
 
     }
 
-     
+     [TestMethod]
+     public void UnUsuarioYaRegistradoEliminaSuCuenta(){
+     controller.RegistrarUsuario("tamara16@live.com.ar", "string nombre", "string apellido", "string obraSocial","12345");
+        Assert.IsTrue(context.Usuario.Contains(controller.userOrAdminSession));
+        controller.EliminarCuenta();
+        Assert.IsFalse(context.Usuario.Contains(controller.userOrAdminSession));
+     }
+
+    [TestMethod]
+    public void UnMedicoEsAgregadoAlSistema(){
+        controller.AgregarMedico("Diego Moronha", "Cardiologia", "Cirujano");
+        Assert.IsNotNull(context.Medico.FirstOrDefault(m=>m.NombreYApellido == "Diego Moronha"));
+    }
+
+    [TestMethod]
+    public void SeAgregaUnaObraSocialAlSistema(){
+         controller.AgregarObraSocial("Premedic", "no hay", "Activa");
+         var obra=context.ObraSocial.FirstOrDefault(os=>os.Nombre == "Premedic");
+         Assert.IsNotNull(obra);
+
+    }
+
+    [TestMethod]
+     public void SeEliminaUnaObraSocialAgregada(){
+         controller.AgregarObraSocial("Premedic", "no hay", "Activa");
+         var obra=context.ObraSocial.FirstOrDefault(os=>os.Nombre == "Premedic");
+         Assert.IsNotNull(obra);
+         controller.EliminarObraSocial(1);
+         var obraBorrada= context.ObraSocial.FirstOrDefault(os=>os.Nombre == "Premedic");
+         Assert.IsNull(obraBorrada);
+     }
+
+    [TestMethod]
+    public void SeEditaElPerfilDeUnUsuarioRegistrado(){
+    controller.RegistrarUsuario("tamara16@live.com.ar", "string nombre", "string apellido", "string obraSocial","12345");
+
+        controller.EditarUsuario("tamara16@live.com.ar", "Tamara", "Benitez", "Premedic", "12345");
+       var user=  context.Usuario.FirstOrDefault(u=>u.Mail == "tamara16@live.com.ar");
+        bool result = user.ObraSocial == "Premedic";
+        Assert.IsTrue(result);
+    }
+
 
 
     [TestCleanup]
