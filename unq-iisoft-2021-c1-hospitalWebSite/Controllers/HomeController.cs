@@ -58,6 +58,23 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
         return View();
     }
 
+
+        [HttpPost]
+        public IActionResult EditarNota(int ID, string titulo, string cuerpo, string fecha, string imagen, string URLnota){
+            Nota nota = db.Nota.FirstOrDefault(n => n.ID == ID);
+            nota.Titulo = titulo;
+            nota.Cuerpo = cuerpo;
+            nota.Fecha = fecha;
+            nota.URLImagen = imagen;
+            nota.URLNotaCompleta = URLnota;
+
+            db.Nota.Update(nota);
+            db.SaveChanges();
+
+            return Redirect("VerNotas");
+        }
+
+
     public IActionResult AgregarNota(string titulo, string cuerpo, string fecha, string imagen, string URLnota){
             Nota nuevaNota = new Nota{
                 Titulo = titulo,

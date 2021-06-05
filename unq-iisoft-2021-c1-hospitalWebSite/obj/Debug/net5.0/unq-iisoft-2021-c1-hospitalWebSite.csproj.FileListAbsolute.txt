@@ -2426,3 +2426,4 @@ C:\Users\Diego\Desktop\proyecto\sprint6-final\unq-iisoft-2021-c1-hospitalWebSite
 C:\Users\Diego\Desktop\proyecto\sprint6-final\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\ref\unq-iisoft-2021-c1-hospitalWebSite.dll
 C:\Users\Diego\Desktop\proyecto\sprint6-final\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\unq-iisoft-2021-c1-hospitalWebSite.pdb
 C:\Users\Diego\Desktop\proyecto\sprint6-final\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\unq-iisoft-2021-c1-hospitalWebSite.genruntimeconfig.cache
+C:\Users\usuario\Desktop\Ingeniera de Software\unq-iisoft-2021-c1-hospitalWebSite\unq-iisoft-2021-c1-hospitalWebSite\obj\Debug\net5.0\Razor\Views\Home\VerNotas.cshtml.g.cs
