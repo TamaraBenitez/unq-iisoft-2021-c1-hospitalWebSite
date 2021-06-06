@@ -90,6 +90,17 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
             db.SaveChanges();
             return View("ResultadoDelProceso");
         }
+        public IActionResult EditarMedico(int ID, string especialidad, string rolEnEspecialidad)
+        {
+            Medico medico = db.Medico.Include(m => m.Especialidad).Include(m => m.RolEnEspecialidad).FirstOrDefault(n => n.ID == ID);
+            medico.Especialidad = db.Especialidad.FirstOrDefault(e => e.Nombre == especialidad);
+            medico.RolEnEspecialidad = db.Rol.FirstOrDefault(r => r.Nombre == rolEnEspecialidad);
+
+            db.Medico.Update(medico);
+            db.SaveChanges();
+
+            return Redirect("VerMedicos");
+        }
         public IActionResult VerNotas(){
             if(CheckSessionOrDefault("AdminLogueado")!=null){
             ViewBag.Notas = db.Nota.ToList();
