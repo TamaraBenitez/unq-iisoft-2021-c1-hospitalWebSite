@@ -55,8 +55,8 @@ public void When(){
   
     //identificar elementos necesarios
     var nombreOS = driver.FindElement(By.XPath("/html/body/div/main/div/div[2]/div[3]/div/div/div/form/div[1]/input"));
-    var urlNota = driver.FindElement(By.XPath("/html/body/div/main/div/div[2]/div[2]/div/div/div/form/div[5]/input"));
-    var guardar = driver.FindElement(By.XPath("/html/body/div/main/div/div[2]/div[2]/div/div/div/form/button"));
+    var urlNota = driver.FindElement(By.XPath("/html/body/div/main/div/div[2]/div[3]/div/div/div/form/div[5]/input"));
+    var guardar = driver.FindElement(By.XPath("/html/body/div/main/div/div[2]/div[3]/div/div/div/form/button"));
     IWebElement selectIsActivated = driver.FindElement(By.XPath("/html/body/div/main/div/div[2]/div[3]/div/div/div/form/div[3]/select"));
     var selectObj = new SelectElement(selectIsActivated); 
     selectObj.SelectByText("Inactiva");
