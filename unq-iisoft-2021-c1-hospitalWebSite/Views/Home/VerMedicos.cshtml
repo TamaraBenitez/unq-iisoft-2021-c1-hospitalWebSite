@@ -13,8 +13,55 @@
                         data-target='#@("deleteConfirmModal"+medico.ID)'>Eliminar</button>
                     <button type="button" class="btn btn-light" data-toggle="modal"
                         data-target='#@("editMedicoModal"+medico.ID)'>Editar</button>
+
+                    <button type="button" class="btn btn-light" data-toggle="modal" 
+                       data-target='#@("showTurn"+medico.ID)'>Ver turnos asignados</button>  
+
+
                 
                     </div>
+
+
+                    <div class="modal fade" id='@("showTurn"+medico.ID)' tabindex="-1" role="dialog"
+                        aria-labelledby="showTurnLabel" data-backdrop="static" data-keyboard="false"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header" id="headerModal" style="background-color: wheat;">
+                                    <h5 class="modal-title" id="deleteConfirmModalLabel">
+                                       Turnos asignados
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                               
+                                    @foreach (var t in ViewBag.Turnos){ 
+                                        @if (@medico.NombreYApellido == @t.Especialista) {
+
+                                                
+                                            <ul>
+
+                                            <li>ID: @t.ID</li>
+                                            <li>E-mail del usuario: @t.MailUsuario</li>
+                                           
+                                            </ul>
+
+                                        }
+
+
+                                    }
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
                     <!-- Modal Editar-->
                     <div class="modal fade" id='@("editMedicoModal"+medico.ID)' tabindex="-1" role="dialog"
                         aria-labelledby="editMedicoModalLabel" data-backdrop="static" data-keyboard="false"

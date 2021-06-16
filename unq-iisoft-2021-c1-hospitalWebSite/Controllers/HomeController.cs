@@ -135,6 +135,7 @@ namespace unq_iisoft_2021_c1_hospitalWebSite.Controllers
           if(CheckSessionOrDefault("AdminLogueado") !=null){
             ViewBag.Medicos = db.Medico.Include(m => m.RolEnEspecialidad).Include(m => m.Especialidad).OrderBy(m => m.Especialidad.Nombre).ToList();
             ViewBag.Especialidades = db.Especialidad.ToList();
+            ViewBag.Turnos= db.Turno.ToList();
             ViewBag.Roles = db.Rol.ToList();
             return View();
             }
